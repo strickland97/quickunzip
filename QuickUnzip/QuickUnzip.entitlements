@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--
+		App Sandbox is ON. User-selected read-write covers files chosen via
+		NSOpenPanel (decompression destinations) and files dropped onto the
+		window (archives). App-scoped bookmarks let us re-access a previously
+		authorized destination folder without re-prompting within the same
+		install. Network is off; no other entitlements needed.
+	-->
+	<key>com.apple.security.app-sandbox</key>
+	<true/>
+	<key>com.apple.security.files.user-selected.read-write</key>
+	<true/>
+	<key>com.apple.security.files.bookmarks.app-scope</key>
+	<true/>
+	<key>com.apple.security.network.client</key>
+	<false/>
+</dict>
+</plist>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- QuickLook Preview Extensions must be sandboxed. quicklookd brokers
+         read access to the file URL passed in QLFilePreviewRequest, so we do
+         not need user-selected file access for the preview itself. Network
+         is intentionally off (privacy mode per PRD). -->
+    <key>com.apple.security.app-sandbox</key>
+    <true/>
+</dict>
+</plist>
